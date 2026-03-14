@@ -1,0 +1,44 @@
+🚀 Server script initiated...
+✅ compression enabled
+✅ helmet enabled
+Server running on port 5001
+✅ MongoDB Connected: ac-tiszmy2-shard-00-00.awlgtym.mongodb.net
+[Auth] Authenticated: jeetdipakpitale07@gmail.com
+Analyzing skin via Python service...
+Python response: { skinTone: 'Very Dark', undertone: 'Warm' }
+📝 Creating Razorpay order with options: { amount: 220000, currency: 'INR', receipt: 'receipt_1773148715241' }
+✅ Order created successfully: order_SPXKkNZiaNrutH
+🔒 Production Mode - Verifying Signature
+Signature Expected: e04b204e28...
+Signature Received: e04b204e28...
+Signature Match: true
+Creating order in database...
+📦 Order Data to Save: {
+  userId: '69b00d8b99da9e63008c497c',
+  name: 'Jeet Pitale',
+  email: 'jeetdipakpitale07@gmail.com',
+  total: 2200
+}
+✅ Order saved successfully: new ObjectId('69b01a44c504afd79f78b652')
+Error sending order confirmation email: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c73cb2289d8sm182608a12.4 - gsmtp
+    at SMTPConnection._formatError (/Users/jeetpitale/Heer/project-website6/backend/node_modules/nodemailer/lib/smtp-connection/index.js:912:19)
+    at SMTPConnection._actionAUTHComplete (/Users/jeetpitale/Heer/project-website6/backend/node_modules/nodemailer/lib/smtp-connection/index.js:1722:34)
+    at SMTPConnection.<anonymous> (/Users/jeetpitale/Heer/project-website6/backend/node_modules/nodemailer/lib/smtp-connection/index.js:651:26)
+    at SMTPConnection._processResponse (/Users/jeetpitale/Heer/project-website6/backend/node_modules/nodemailer/lib/smtp-connection/index.js:1098:20)
+    at SMTPConnection._onData (/Users/jeetpitale/Heer/project-website6/backend/node_modules/nodemailer/lib/smtp-connection/index.js:872:14)
+    at SMTPConnection._onSocketData (/Users/jeetpitale/Heer/project-website6/backend/node_modules/nodemailer/lib/smtp-connection/index.js:196:44)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c73cb2289d8sm182608a12.4 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+⚠️ Email failed: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c73cb2289d8sm182608a12.4 - gsmtp
+[Auth] Authenticated: jeetdipakpitale07@gmail.com
+[Auth] Authenticated: jeetdipakpitale07@gmail.com
