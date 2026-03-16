@@ -104,8 +104,8 @@ export default function StyleScanPage() {
             try {
                 // Fetch slim version (no images) to avoid proxy timeouts with base64 data
         const url = isRetry
-        ? 'https://ai-fashion-backend-1gjz.onrender.com/api/products?slim=true'
-        : '/api/products?slim=true';
+  ? 'https://ai-fashion-backend-1gjz.onrender.com/api/products?slim=true'
+  : '/api/products?slim=true';
                 // Enrich each product with detected colors
                 const enriched = data.map(p => ({
                     ...p,
@@ -254,8 +254,7 @@ export default function StyleScanPage() {
             const fullRecommendations = await Promise.all(
                 subsetToFetch.map(async (p) => {
                     try {
-                        const { data } = await API.get(`/products/${p.id || p._id}`);
-                        return { ...data, id: data._id };
+                            const { data } = await API.get(`/api/products/${p.id || p._id}`);                        return { ...data, id: data._id };
                     } catch (e) {
                         return p; // fallback to slim if full fetch fails
                     }
@@ -353,7 +352,7 @@ export default function StyleScanPage() {
         try {
             const fullResults = await Promise.all(
                 subsetToFetch.map(async (p) => {
-                    const { data } = await API.get(`/products/${p.id || p._id}`);
+                   const { data } = await API.get(`/api/products/${p.id || p._id}`);
                     return { ...data, id: data._id };
                 })
             );
