@@ -88,7 +88,7 @@ export const useStore = create()(
             products: initialProducts,
             fetchProducts: async () => {
                 try {
-                    const { data } = await API.get('/products');
+                   const { data } = await API.get('/api/products');
                     const formatted = data.map(p => ({ ...p, id: p._id }));
                     set({ products: formatted });
 
