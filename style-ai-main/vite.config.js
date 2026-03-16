@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5001',
+        target: 'https://ai-fashion-backend-1gjz.onrender.com',
         changeOrigin: true,
         secure: false,
       }

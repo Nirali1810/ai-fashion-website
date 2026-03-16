@@ -103,8 +103,7 @@ export default function StyleScanPage() {
         const fetchProducts = async (isRetry = false) => {
             try {
                 // Fetch slim version (no images) to avoid proxy timeouts with base64 data
-                const url = isRetry ? 'http://localhost:5001/api/products?slim=true' : '/products?slim=true';
-                const { data } = await API.get(url);
+const url = isRetry ? 'http://localhost:5001/api/products?slim=true' : '/products?slim=true';                const { data } = await API.get(url);
 
                 // Enrich each product with detected colors
                 const enriched = data.map(p => ({
